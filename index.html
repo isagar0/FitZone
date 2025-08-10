@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="es">}
+
+<!-- HEAD -->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FitZone — Transforma tu cuerpo</title>
+  <meta name="description" content="FitZone: gimnasio moderno para jóvenes. Clases, entrenadores, horarios y una prueba gratuita." />
+
+  <!-- CSS Tailwind -->
+  <link rel="stylesheet" href="output.css" />
+</head>
+
+<!-- BODY -->
+<body class="bg-white text-slate-800 antialiased selection:bg-amber-200 selection:text-amber-900">
+  
+  <!-- HEADER -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-sm border-b border-slate-200">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="#" class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-rose-500 to-orange-400 flex items-center justify-center text-white font-bold" aria-hidden="true">FZ</div>
+          <span class="font-semibold text-lg">FitZone</span>
+        </a>
+        <nav aria-label="Principal" class="hidden md:flex items-center gap-6">
+          <a class="text-sm hover:underline" href="#servicios">Servicios</a>
+          <a class="text-sm hover:underline" href="#horarios">Horarios</a>
+          <a class="text-sm hover:underline" href="#testimonios">Testimonios</a>
+          <a class="text-sm bg-amber-500 text-white px-3 py-2 rounded-md shadow-sm hover:opacity-95" href="#cta">¡Clase gratis!</a>
+        </nav>
+        <div class="flex items-center gap-3">
+          <button id="langToggle" aria-label="Cambiar idioma" class="p-2 rounded-md hover:bg-slate-100 focus:outline-offset-2">ES</button>
+          <button id="mobileOpen" aria-controls="mobileMenu" aria-expanded="false" class="md:hidden p-2 rounded-md focus:outline-offset-2">☰</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- MENÚ MÓVIL -->
+    <div id="mobileMenu" class="md:hidden hidden border-t border-slate-100">
+      <div class="px-4 py-3 space-y-2">
+        <a class="block text-base" href="#servicios">Servicios</a>
+        <a class="block text-base" href="#horarios">Horarios</a>
+        <a class="block text-base" href="#testimonios">Testimonios</a>
+        <a class="block text-base bg-amber-500 text-white px-3 py-2 rounded-md" href="#cta">¡Clase gratis!</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="mt-8">
+
+    <!-- HERO -->
+    <section class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-16">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <div class="animate-fade-up">
+            <h1 class="text-4xl sm:text-5xl font-extrabold mb-4">Transforma tu cuerpo en <span class="text-rose-600">FitZone</span></h1>
+            <p class="text-lg text-slate-600 mb-6">Entrena en un espacio moderno con entrenadores expertos y programas para todos los niveles.</p>
+            <a id="btn1" href="#cta" class="bg-amber-500 text-white px-6 py-3 rounded-lg shadow hover:opacity-90 transition">¡Obtén tu clase gratis!</a>
+        </div>
+      
+        <div class="animate-fade-up" aria-hidden="true">
+            <div class="rounded-xl overflow-hidden shadow-lg">
+                <img src="img/foto1.jpg" alt="Personas entrenando en gimnasio" class="w-full h-64 object-cover sm:h-80 lg:h-96" />
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 ">
+      <h2 class="text-3xl font-bold mb-4">Servicios</h2>
+      <p class="text-slate-600 mb-8">Opciones para todos los objetivos: fuerza, resistencia, pérdida de peso y bienestar.</p>
+      <div class="grid gap-6 md:grid-cols-3">
+        <div class="p-6 bg-white rounded-lg shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">Musculación</h3>
+          <p id="servicio1-desc" class="text-slate-600">Equipos de última generación para desarrollar fuerza y masa muscular.</p>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">Clases Grupales</h3>
+          <p id="servicio2-desc" class="text-slate-600">Zumba, yoga, HIIT y más para mantenerte motivado.</p>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">Entrenamiento Personal</h3>
+          <p id="servicio3-desc" class="text-slate-600">Programas diseñados para tus metas específicas.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- HORARIOS -->
+    <section id="horarios" class="bg-slate-50 py-16">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold mb-4">Horarios</h2>
+        <p class="text-slate-600 mb-8">Horarios semanales (sujeto a cambios).</p>
+        <table class="w-full border-collapse bg-white shadow rounded-lg overflow-hidden">
+          <thead>
+            <tr class="bg-slate-100">
+              <th class="p-3 text-left">Día</th>
+              <th class="p-3 text-left">Apertura</th>
+              <th class="p-3 text-left">Cierre</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="p-3">Lunes a Viernes</td>
+              <td class="p-3">06:00</td>
+              <td class="p-3">22:00</td>
+            </tr>
+            <tr>
+              <td class="p-3">Sábado</td>
+              <td class="p-3">08:00</td>
+              <td class="p-3">20:00</td>
+            </tr>
+            <tr>
+              <td class="p-3">Domingo</td>
+              <td class="p-3">09:00</td>
+              <td class="p-3">14:00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section id="testimonios" class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <h2 class="text-3xl font-bold mb-8">Testimonios</h2>
+      <div class="grid gap-6 md:grid-cols-3">
+        <blockquote class="p-6 bg-white rounded-lg shadow">
+          <p class="text-slate-600">"FitZone me cambió la vida. Los entrenadores son increíbles."</p>
+          <footer class="mt-3 font-semibold">— Ana M.</footer>
+        </blockquote>
+        <blockquote class="p-6 bg-white rounded-lg shadow">
+          <p class="text-slate-600">"Ambiente motivador y máquinas de primera."</p>
+          <footer class="mt-3 font-semibold">— Carlos R.</footer>
+        </blockquote>
+        <blockquote class="p-6 bg-white rounded-lg shadow">
+          <p class="text-slate-600">"Clases variadas que me mantienen activa."</p>
+          <footer class="mt-3 font-semibold">— Laura G.</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- CTA FORM -->
+    <section id="cta" class="bg-amber-50 py-16">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl font-bold mb-4">¡Obtén tu clase gratis!</h2>
+        <p class="text-slate-600 mb-8">Déjanos tus datos y te contactamos para agendar tu primera clase.</p>
+        <form id="freeClassForm" class="max-w-md mx-auto space-y-4">
+          <input id="name" name="name" type="text" placeholder="Nombre" class="w-full p-3 border border-slate-300 rounded-lg" />
+          <input id="email" name="email" type="email" placeholder="Correo" class="w-full p-3 border border-slate-300 rounded-lg" />
+          <button type="submit" class="w-full bg-amber-500 text-white py-3 rounded-lg shadow hover:opacity-90">Solicitar clase</button>
+          <p id="formMsg" class="text-sm text-rose-600"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- UBICACIÓN -->
+    <section id="ubicacion" class="py-16">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold mb-4">Ubicación</h2>
+        <p class="text-slate-600 mb-4">Estamos en el centro de la ciudad, cerca del parque principal.</p>
+        <div class="aspect-w-16 aspect-h-9">
+          <iframe class="w-full h-64 border-0 rounded-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14939.698461663336!2d-100.40389240692895!3d20.591135932182997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35b2a918d2dc1%3A0x35673f825669f344!2sCentro%2C%20Santiago%20de%20Quer%C3%A9taro%2C%20Qro.!5e0!3m2!1ses!2smx!4v1754802630192!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-900 text-slate-200 py-8">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-start gap-6">
+      <div>
+        <div class="flex items-center gap-3 mb-2">
+          <div class="w-8 h-8 rounded bg-amber-500 flex items-center justify-center font-bold">FZ</div>
+          <span class="font-semibold">FitZone</span>
+        </div>
+        <p class="text-sm text-slate-300">© 2025 FitZone. Todos los derechos reservados.</p>
+        <p class="mt-4 text-sm text-slate-300">Contacto: hola@fitzone.example · +52 1 55 1234 5678</p>
+        <p class="text-sm text-slate-300">Síguenos:</p>
+        <div class="mt-2 flex gap-3">
+          <a class="text-sm underline" href="https://www.instagram.com/" aria-label="Instagram">Instagram</a>
+          <a class="text-sm underline" href="https://www.facebook.com/" aria-label="Facebook">Facebook</a>
+          <a class="text-sm underline" href="https://x.com/?lang=es" aria-label="X">X</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/menu.js"></script>
+  <script src="js/language.js"></script>
+  <script src="js/form.js"></script>
+
+</body>
+</html>
