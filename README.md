@@ -1,4 +1,5 @@
 # Proyecto Landing Page - FitZone
+Por: Isabella Garduño Horneffer
 
 ## Justificación de decisiones de diseño y tecnología
 
